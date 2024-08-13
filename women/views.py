@@ -5,7 +5,7 @@ from .serializers import WomenSerializer
 
 
 class WomenAPIList(generics.ListCreateAPIView):
-    queryset = Womwn.objects.all()
+    queryset = Women.objects.all()
     serializer_class = WomenSerializer
 
 
