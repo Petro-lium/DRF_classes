@@ -9,7 +9,7 @@ from .serializers import WomenSerializer
 class WomenViewSet(viewsets.ModelViewSet):
     queryset = Women.objects.all()
     serializer_class = WomenSerializer
-    
+
     @action(methods=['get'], detail=True) # False возвращается список категорий, если True то одна запись
     def category(self, request, pk=None):
         cats = Category.objects.get(pk=pk)
