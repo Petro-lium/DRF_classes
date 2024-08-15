@@ -1,7 +1,6 @@
 *.pyc
 *~
 *.log
-.gitignore
 env_drf
 __pycache__
 .idea
