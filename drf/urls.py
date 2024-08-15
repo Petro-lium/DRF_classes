@@ -33,6 +33,7 @@ urlpatterns = [
     path('api/v1/womendelete/<int:pk>/', WomenAPIDestroy.as_view()),
     path('api/v1/auth/', include('djoser.urls')),
     re_path(r'^auth/', include('djoser.urls.authtoken')),
+    # Simple JWT
     path('auth/v1/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('auth/v1/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('auth/v1/token/verify/', TokenVerifyView.as_view(), name='token_verify')
